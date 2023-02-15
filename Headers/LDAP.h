@@ -7,7 +7,7 @@
 
 #include "Errors.h"
 
-#define SIZE_LIMIT 1000
+#define PAGE_SIZE 500
 
 void                LDAP_SetOption          (LDAP ** LDAPConnection, int Option, void * Value);
 
@@ -17,7 +17,6 @@ int                 LDAP_Bind               (LDAP ** LDAPConnection, char * User
 void                LDAP_Enumerate          (LDAP ** LDAPConnection, char * BaseDN, char * Filter, char * Attributes[]);
 
 LDAPMessage *       LDAP_Search             (LDAP ** LDAPConnection, int SearchScope, char * BaseDN, char * Filter, char * Attributes[]);
-void                ParseAnswer             (LDAP ** LDAPConnection, LDAPMessage * Answer);
 
 
 #endif

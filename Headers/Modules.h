@@ -6,6 +6,7 @@
 int     ENUM_Context            (LDAP ** LDAPConnection);
 
 void    ENUM_Users              (LDAP ** LDAPConnection, char * BaseDN);
+void    ENUM_PasswordExpiry	    (LDAP ** LDAPConnection, char * BaseDN);
 void    ENUM_Groups             (LDAP ** LDAPConnection, char * BaseDN);
 void    ENUM_Computers          (LDAP ** LDAPConnection, char * BaseDN);
 void    ENUM_Delegation         (LDAP ** LDAPConnection, char * BaseDN);
@@ -18,5 +19,7 @@ void    ENUM_PrivilegedUsers    (LDAP ** LDAPConnection, char * BaseDN);
 void    ENUM_ASREP              (LDAP ** LDAPConnection, char * BaseDN);
 
 void    ENUM_Base               (LDAP ** LDAPConnection);
+
+
 
 #endif
