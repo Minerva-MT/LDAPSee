@@ -76,11 +76,13 @@ int main (int argc, char ** argv)
     
     ENUM_Base(&LDAPConnection);
     ENUM_Users              (&LDAPConnection, BaseDN);
+    ENUM_PasswordExpiry		(&LDAPConnection, BaseDN);
     ENUM_Computers          (&LDAPConnection, BaseDN);
     ENUM_Delegation         (&LDAPConnection, BaseDN);
 
     ENUM_GPO                (&LDAPConnection, BaseDN);
     ENUM_SPNs               (&LDAPConnection, BaseDN);
+    ENUM_AdminCount         (&LDAPConnection, BaseDN);
     ENUM_PrivilegedUsers    (&LDAPConnection, BaseDN);
     ENUM_ASREP              (&LDAPConnection, BaseDN);
     

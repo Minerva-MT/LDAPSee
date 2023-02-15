@@ -1,3 +1,3 @@
 
 ldapsee:
-	$(CC) ldapsee.c Source/*.c -o ldapsee -lldap -llber
+	$(CC) -ggdb ldapsee.c Source/*.c -o ldapsee -lldap -llber
